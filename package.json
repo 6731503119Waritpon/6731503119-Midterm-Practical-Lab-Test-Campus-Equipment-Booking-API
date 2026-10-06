@@ -1,0 +1,23 @@
+{
+  "name": "campus-equipment-booking-api",
+  "version": "1.0.0",
+  "description": "Campus Equipment Booking API for Midterm Practical Lab Test",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init:local": "wrangler d1 execute equipment-db --local --file=./schema.sql",
+    "db:init:remote": "wrangler d1 execute equipment-db --remote --file=./schema.sql",
+    "db:view:local": "wrangler d1 execute equipment-db --local --command=\"SELECT * FROM equipment; SELECT * FROM bookings;\"",
+    "db:view:remote": "wrangler d1 execute equipment-db --remote --command=\"SELECT * FROM equipment; SELECT * FROM bookings;\""
+  },
+  "dependencies": {
+    "hono": "^4.6.14"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "typescript": "^5.7.3",
+    "wrangler": "^3.111.0"
+  }
+}
