@@ -1,8 +1,11 @@
 # Campus Equipment Booking API
 
 **Course:** 2026_PlatformDev — Midterm Practical Lab Test  
+**Student Name:** Waritpon Kokong  
+**Student ID:** 6731503119  
 **Stack:** TypeScript, Hono Framework, Cloudflare Workers, Cloudflare D1 (SQLite)  
-**Base URL:** `http://localhost:8787` (supports both `/api` prefix and root routes)
+**Live Production URL:** `https://6731503119-campus-equipment-booking-api.team03-enrollment.workers.dev`  
+**Base URL (Local):** `http://localhost:8787` (supports both `/api` prefix and root routes)
 
 ---
 

@@ -1,7 +1,9 @@
 # Quality Gate Review (QUALITY_GATE_REVIEW.md)
 
 **Review Date & Time:** Tuesday, 6 October 2026 (~Minute 30 Snapshot)  
-**Project:** Campus Equipment Booking API  
+**Project:** Campus Equipment Booking API
+**Student Name:** Waritpon Kokong  
+**Student ID:** 6731503119  
 **Reviewer:** Student (Self-Assessment & Verification)  
 
 ---
@@ -89,4 +91,21 @@
 | **Security** | Generic queries | 100% Parameter Binding on all D1 interactions |
 | **Robustness** | Basic null check | Comprehensive ISO date & chronological validation |
 | **API Contract** | Single base path | Mounted on both `/` and `/api` with CORS for tester support |
+
+---
+
+## 4. Quality Gate Review Record
+
+| Quality Gate area | Finding | Action taken | Evidence |
+|---|---|---|---|
+| **Reliability** | An update (`PATCH`) could conflict with its own existing booking during partial update. | Excluded the booking being updated (`AND id != ?`) from the overlap query in `PATCH`. | Added an update test (`PATCH /api/bookings/:id`); it returns `200 OK` without false conflict. |
+| **Security / Accuracy** | Direct SQL string interpolation risk in D1 database calls. | Refactored all database operations to strictly use D1 parameter binding (`.prepare(...).bind(...)`). | Audited `src/index.ts`; injection payloads return `400 Bad Request` safely without SQL execution. |
+| **Reasoning / You Own It** | Timestamps lacked strict ISO format and chronological check (`startAt < endAt`). | Enforced ISO 8601 parsing and `startDate >= endDate -> 400` validation with `{ "error": "..." }` response. | Tested inverted time range (`startAt > endAt`); returns `400 Bad Request` with required error JSON. |
+
+---
+
+## 5. Submission Decision
+
+* [x] **READY:** All required work is complete, all 8 checks from `quality_gate.md` pass, tests have been verified with `curl_test_guide.md`, and all code can be clearly explained.
+
 

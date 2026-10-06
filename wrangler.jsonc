@@ -1,13 +1,13 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "campus-equipment-booking-api",
+  "name": "6731503119-campus-equipment-booking-api",
   "main": "src/index.ts",
   "compatibility_date": "2024-10-01",
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "equipment-db",
-      "database_id": "equipment-db-id"
+      "database_id": "0671b10d-589e-4630-ab24-8cb3d290ac4e"
     }
   ]
 }

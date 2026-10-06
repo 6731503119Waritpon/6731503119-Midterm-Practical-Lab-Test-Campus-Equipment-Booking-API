@@ -46,6 +46,7 @@ const api = new Hono<{ Bindings: Bindings }>();
 api.get('/', (c) => {
   return c.json({
     name: 'Campus Equipment Booking API',
+    studentId: '6731503119',
     status: 'online',
     endpoints: {
       equipment: '/equipment',

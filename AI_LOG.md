@@ -1,6 +1,7 @@
 # AI Assistance Log (AI_LOG.md)
 
-**Student Name:** [Your Name / Student ID]  
+**Student Name:** Waritpon Kokong
+**Student ID:** 6731503119  
 **Course:** 2026_PlatformDev — Midterm Practical Lab Test  
 **Project:** Campus Equipment Booking API  
 

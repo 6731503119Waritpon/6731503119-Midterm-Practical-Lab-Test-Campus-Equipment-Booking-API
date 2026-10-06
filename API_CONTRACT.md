@@ -1,5 +1,6 @@
 # API Contract: Campus Equipment Booking API
 
+**Live Production URL:** `https://6731503119-campus-equipment-booking-api.team03-enrollment.workers.dev`  
 **Base URL (Local):** `http://localhost:8787` (both `/api` prefix and root paths are supported)  
 **Content-Type:** `application/json`
 
