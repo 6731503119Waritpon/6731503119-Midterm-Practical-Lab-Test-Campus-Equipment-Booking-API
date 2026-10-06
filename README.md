@@ -276,3 +276,4 @@ Tested with `BASE_URL="http://127.0.0.1:8787"`.
 * [`API_CONTRACT.md`](API_CONTRACT.md) — Complete REST specification and schema rules.
 * [`AI_LOG.md`](AI_LOG.md) — Log of AI interactions, prompts, modifications, and verifications.
 * [`QUALITY_GATE_REVIEW.md`](QUALITY_GATE_REVIEW.md) — 30-minute Quality Gate audit, findings, fixes, and evidence.
+

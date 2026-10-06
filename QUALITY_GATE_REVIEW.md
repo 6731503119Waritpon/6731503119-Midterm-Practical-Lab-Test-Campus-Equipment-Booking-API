@@ -89,3 +89,4 @@
 | **Security** | Generic queries | 100% Parameter Binding on all D1 interactions |
 | **Robustness** | Basic null check | Comprehensive ISO date & chronological validation |
 | **API Contract** | Single base path | Mounted on both `/` and `/api` with CORS for tester support |
+

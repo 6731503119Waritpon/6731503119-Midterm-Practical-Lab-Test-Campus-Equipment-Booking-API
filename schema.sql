@@ -31,3 +31,4 @@ INSERT OR IGNORE INTO equipment (id, name, location, category) VALUES
     ('eq-1', 'Projector A', 'Building 1', 'Projector'),
     ('eq-2', 'Sony Alpha 7 IV Camera', 'Media Center, Room 204', 'Camera'),
     ('eq-3', 'Meeting Room 301', 'Building 3, 3rd Floor', 'Room');
+

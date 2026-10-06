@@ -61,3 +61,4 @@ All AI suggestions were carefully inspected, tested against local D1 SQLite stor
   * Suggested mounting the same Hono sub-app on both `/api` and `/`.
 * **Verification & Modifications:**
   * Tested both `curl http://localhost:8787/equipment` and `curl http://localhost:8787/api/equipment`. Both returned identical valid JSON responses with CORS headers (`Access-Control-Allow-Origin: *`).
+
